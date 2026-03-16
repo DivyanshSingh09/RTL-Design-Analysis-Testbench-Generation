@@ -1,0 +1,31 @@
+# --- Python Specifics ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# --- Pyverilog & Parser Cache ---
+# Hides the lextab/parsetab files and the folder we created
+.parser_cache/
+parsetab.py
+lextab.py
+
+
+# --- Output Artifacts ---
+# This ignores all the generated testbenches and folders in /output
+output/
+
+# --- Simulation Junk ---
+# If you run ModelSim or Vivado, they leave these behind
+*.log
+*.jou
+*.pb
+*.wdb
+vsim.wlf
+work/
+transcript
+
+# --- OS Specifics ---
+.DS_Store
+Thumbs.db
